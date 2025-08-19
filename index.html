@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <STYLE>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(4, 128, 128);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: rgb(28, 114, 121);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 80px;
+        }
+
+        nav ul li {
+            cursor: pointer;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white
+        }
+
+        nav ul li a:hover {
+            color: rgb(50, 70, 111);
+            text-decoration: underline;
+            font-size: 1.05rem;
+        }
+
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 40px;
+            margin: 80px 0;
+        }
+
+
+        .leftSection {
+            font-size: 3rem;
+
+
+        }
+
+        .leftSection,
+        .rightSection {
+            flex: 1;
+        }
+
+
+        .rightSection img {
+            width: 85%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+
+        .purple {
+            color: rgb(42, 4, 146);
+        }
+
+        #element {
+            color: rgb(42, 4, 146);
+
+        }
+
+        .aboutSection {
+            max-width: 80vw;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: rgb(28, 114, 121);
+            border-radius: 10px;
+            color: white;
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        .aboutSection h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: rgb(255, 255, 255);
+            text-align: center;
+
+        }
+
+        .aboutSection h2 {
+            color: rgb(18, 46, 131);
+        }
+
+        .aboutContent {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .aboutContent img {
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 3px solid white;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+
+
+        .pageFooter {
+            background-color: #ffffff;
+            padding: 20px 0;
+            text-align: center;
+            border-top: 1px solid #ddd;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        .footerContent p {
+            margin: 0;
+            color: #333;
+            font-size: 0.9rem;
+        }
+
+        .socialLinks {
+            margin-top: 10px;
+        }
+
+        .socialLinks a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: royalblue;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .socialLinks a:hover {
+            color: #0056b3;
+        }
+
+        .resumeBtn {
+            margin-top: 25px;
+            text-align: left;
+
+        }
+
+        .resumeBtn {
+            margin-top: 25px;
+
+            text-align: left;
+
+        }
+
+        .resumeBtn a {
+            display: inline-block;
+
+            padding: 12px 25px;
+
+            background-color: rgb(42, 4, 146);
+
+            color: white;
+
+            font-size: 1rem;
+
+            font-weight: 600;
+
+            border-radius: 8px;
+
+            text-decoration: none;
+
+            transition: background 0.3s ease, transform 0.2s ease;
+        }
+
+        .resumeBtn a:hover {
+            background-color: rgb(28, 114, 121);
+
+            transform: scale(1.05);
+
+        }
+
+        .skillsSection {
+            max-width: 80vw;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: rgb(28, 114, 121);
+            border-radius: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        .skillsSection h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: rgb(18, 46, 131);
+        }
+
+        .skillsContent {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+        }
+
+        .skill {
+            padding: 12px 20px;
+            background-color: rgb(42, 4, 146);
+            border-radius: 8px;
+            font-weight: 500;
+            transition: background 0.3s ease, transform 0.2s ease;
+        }
+
+        .skill:hover {
+            background-color: rgb(18, 46, 131);
+            transform: scale(1.05);
+        }
+    </STYLE>
+</head>
+
+<body>
+    <HEAder>
+        <Nav>
+            <DIV class="left">Kushagra's Portfolio</DIV>
+            <div class="right"></div>
+            <UL>
+                <li><a href="/">Home</a></li>
+                <li><a href="/">About</a></li>
+                <li><a href="/">Services</a></li>
+                <li><a href="/">Projects</a></li>
+                <li><a href="/">Contact Me</a></li>
+            </UL>
+        </Nav>
+
+    </HEAder>
+
+    <main class="firstsection">
+        <section class="firstsection"></section>
+        <div class="leftSection">
+            Hi, my name is <span class="purple">Kushagra</span>
+
+            <div>I am a web developer</div>
+            <span id="element"></span>
+            <br>
+            <div class="resumeBtn">
+                <a href="https://drive.google.com/file/d/1Mod6mjsOwBgOjlI2fhriwUcHfxMvZTEL/view?usp=drivesdk"
+                    download>Download Resume</a>
+            </div>
+        </div>
+
+
+
+        <div class="rightSection">
+            <img src="bg.png" alt="">
+            </section>
+        </div>
+
+    </main>
+    <section class="aboutSection">
+        <h2>About Me</h2>
+        <div class="aboutContent">
+            <img src="picofme.png" alt="Kushagra Singh">
+
+            <p>
+                I'm Kushagra, a passionate web developer currently pursuing a Bachelor of Computer Applications from
+                Lucknow
+                University.
+                With a strong foundation in front-end and back-end technologies, I enjoy building responsive,
+                user-friendly
+                websites and applications.
+                My goal is to gain practical experience through internships and grow into a skilled software engineer.
+            </p>
+        </div>
+    </section>
+    <section class="skillsSection">
+        <h2>My Skills</h2>
+        <div class="skillsContent">
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">React</div>
+            <div class="skill">Node.js</div>
+            <div class="skill">Python</div>
+            <div class="skill">C++</div>
+            <div class="skill">SQL</div>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['wb developer', 'full stack developer', 'software engineer'],
+            typeSpeed: 50,
+        });
+    </script>
+    <footer class="pageFooter">
+        <div class="footerContent">
+            <p>&copy; 2025 Kushagra Singh. All rights reserved.</p>
+            <div class="socialLinks">
+                <a href="https://www.linkedin.com/in/kushagra-singh-3b8618226" target="_blank">LinkedIn</a>
+                <a href="https://github.com/kushagra11csk" target="_blank">GitHub</a>
+                <a href="mailto:kushagra010singh@gmail.com">Email</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
